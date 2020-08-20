@@ -25,6 +25,7 @@ namespace OA_WebApi.Controllers
         [HttpGet]
         public List<ProductDetails> Get()
         {
+            int fff = 1;
             List<ProductDetails> productDetails = new List<ProductDetails>();
             var prodcutList = productService.GetProduct().ToList();
             foreach (var product in prodcutList)
